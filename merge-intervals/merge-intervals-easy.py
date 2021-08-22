@@ -13,4 +13,6 @@ class Solution:
                     merged[-1][1] = max(previous_end,current_end)
                 else:
                     merged.append(intervals[i])
-        return merged               
+        return merged   
+    
+    # Explanation: Intervals [1,4] and [4,5] are considered overlapping.
