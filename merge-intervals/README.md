@@ -24,3 +24,13 @@
 	<li><code>0 &lt;= start<sub>i</sub> &lt;= end<sub>i</sub> &lt;= 10<sup>4</sup></code></li>
 </ul>
 </div>
+
+<p>&nbsp;</p>
+The algorithm used a merged list and a variable i.
+In the worst case, the merged list is equal to the length of the input intervals list. So the space complexity is O(n), where n is the length of the input list.
+
+<p>&nbsp;</p>
+In python, use sort method to a list costs O(nlogn), where n is the length of the list.
+The for-loop used to merge intervals, costs O(n).
+O(nlogn)+O(n) = O(nlogn)
+So the total time complexity is O(nlogn).
