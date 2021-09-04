@@ -33,11 +33,11 @@
 
 <p><strong>Base case</strong></p>
 
-This question wants to find a path from node to the leaf, so the node who satisfies must be a leaf (not node.left and not nood.right)
-I want to recursively subtract the sum by current node's value, so the leaf node of correct path must have the same value of its assigned sum
+1. This question wants to find a path from node to the leaf, so the node who satisfies must be a leaf (not node.left and not nood.right)
+2. I want to recursively subtract the sum by current node's value, so the leaf node of correct path must have the same value of its assigned sum
 
 <p><strong>Recursive step</strong></p>
 
-We want to traverse all the nodes, so node.left and node.right must be called parallelly
-One valid path is enough, so we want to use or to connect two "branches"
-Considering each node as the root of its children, sum should be modified from its parent
+1. We want to traverse all the nodes, so node.left and node.right must be called parallelly
+2. One valid path is enough, so we want to use or to connect two "branches"
+3. Considering each node as the root of its children, sum should be modified from its parent
