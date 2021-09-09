@@ -6,5 +6,3 @@ class Solution:
             if target - nums[i] in value_to_index:
                 return [value_to_index[target - nums[i]], i]
             value_to_index[nums[i]] = i
-        
-        return answer
