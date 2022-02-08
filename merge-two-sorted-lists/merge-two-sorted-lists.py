@@ -28,3 +28,6 @@ class Solution:
         
         return head.next                    # since first node in result is the default 0
             
+# merge k lists
+# compare one by one -> O(kN) brute force
+# optimize comparison process with a heap -> O(N log k)
