@@ -5,7 +5,8 @@
 #         self.next = next
 class Solution:
     def mergeTwoLists(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
-        # fist linked list question
+        # first linked list question
+        # maintain an unchanging reference to node ahead of the return node.
         result = ListNode()
         head = result                       # pointer to the result linked list
         
@@ -18,6 +19,8 @@ class Solution:
                 l2 = l2.next          
             result = result.next            # move to the next element in result
         
+        # At least one of l1 and l2 can still have nodes at this point, so connect
+        # the non-null list to the end of the merged list.
         if l1:
             result.next = l1
         if l2:
