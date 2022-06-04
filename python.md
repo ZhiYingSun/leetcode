@@ -1,3 +1,9 @@
+### Strings
+F-Strings are more efficent - but when I am using it, remember to explain to interviewer a bit (or ask if they are familiar with it)
+
+- `print(f"The band for {name} is {band} out of 10")`
+
+
 ### Set
 Implemented internally like a dictionary (with a hash table)
 - `x in s` - O(1)
